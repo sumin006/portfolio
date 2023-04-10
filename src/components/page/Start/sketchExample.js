@@ -72,7 +72,7 @@ class SketchExample extends React.Component {
         </div> : null }
         <div className='favorite-color'>
           <input type='hidden' value={ `rgba(${ this.state.color.r }, ${ this.state.color.g }, ${ this.state.color.b }, ${ this.state.color.a })`}/>
-          <button onClick={()=>{ setCookie("r",this.state.color.r); setCookie("g",this.state.color.g); setCookie("b",this.state.color.b); setCookie("a",this.state.color.a); window.location.reload()}}>확인</button>
+          <button onClick={()=>{ setCookie("r",this.state.color.r); setCookie("g",this.state.color.g); setCookie("b",this.state.color.b); setCookie("a",1); window.location.reload()}}>확인</button>
         </div>
         
       </form>

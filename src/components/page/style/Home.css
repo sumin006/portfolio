@@ -1,7 +1,17 @@
+
+.black.on{
+	background-color: rgba(0, 0, 0, .5);
+	width: 100vw;
+	height: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+
 .main{
 	border-top: 1px solid #ccc;
-	margin: 20px 0;
-	padding: 40px 0;
+	padding: 60px 0;
 	animation: bgAnimation 1s forwards;
 }
 .main .hello{
@@ -20,11 +30,13 @@
 .main .hello .gifbtn:hover{
 	background-color: var(--user-color);
 	color: var(--font-color);
+	z-index: 98;
 }
 .main .bannerCollection{
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	position: relative;
 }
 .main .bannerCollection .banner{
 	padding: var(--default-padding);
@@ -39,10 +51,25 @@
 	transition: .5s;
 }
 .main .bannerCollection .banner.bannerOne{
-	background-image: url("../../../../public/bannerOne.png");
+	background-image: url("../../../../public/bannerOnce.png");
 }
 .main .bannerCollection .banner.bannerOne.gif{
 	background-image: url("../../../../public/bannerOnce.gif");
+	z-index: 98;
+}
+.main .bannerCollection .banner.bannerTwo{
+	background-image: url("../../../../public/bannerTwo.png");
+}
+.main .bannerCollection .banner.bannerTwo.gif{
+	background-image: url("../../../../public/bannerTwo.gif");
+	z-index: 98;
+}
+.main .bannerCollection .banner.bannerThree{
+	background-image: url("../../../../public/bannerThree.png");
+}
+.main .bannerCollection .banner.bannerThree.gif{
+	background-image: url("../../../../public/bannerThree.gif");
+	z-index: 98;
 }
 
 .main .commentBox{

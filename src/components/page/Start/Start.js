@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SketchExample from './sketchExample';
 import '../style/Start.css'
+import { setCookie } from '../../../App';
 
 const Start = () => {
 	const[name,setName]=useState("")

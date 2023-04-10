@@ -9,9 +9,6 @@ const Footer = () => {
 		<footer>
 				<ul className='footList inner'>
 					<li>
-						<div className='imgDiv'>						
-						<img src='/main_img.jpg' alt=''/>
-						</div>
 						<div>
 						<b>사용자 중심의 사이트 개발을 위해 공부하는 프론트 엔드 개발자</b>
 						</div>

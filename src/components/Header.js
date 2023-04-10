@@ -4,7 +4,6 @@ import './Header.css'
 const Header = () => {
 	return (
 		<header>
-			<h1 className='logo'>logo</h1>
 			<div className='headList'>
 				<ul>
 					<li><Link to="/">HOME</Link></li>

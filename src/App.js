@@ -22,9 +22,9 @@ export const delCookie=(name)=>{
 export const isDone= getCookie("r")&&getCookie("g")&&getCookie("b")&&getCookie("a");
 
 function App() {
-  const colorRGBA= `rgba(${getCookie("r")},${getCookie("g")},${getCookie("b")},${getCookie("a")})`;
+  const colorRGB= `rgba(${getCookie("r")},${getCookie("g")},${getCookie("b")}`;
   const colorRGBA_mini= `rgba(${getCookie("r")},${getCookie("g")},${getCookie("b")},.1)`;
-  document.documentElement.style.setProperty(`--user-color`,colorRGBA);
+  document.documentElement.style.setProperty(`--user-color`,colorRGB);
   document.documentElement.style.setProperty(`--main-color`,colorRGBA_mini);
   if(((getCookie("r")*1+getCookie("g")*1+getCookie("b")*1)/3)>200){
     document.documentElement.style.setProperty(`--font-color`,'black');

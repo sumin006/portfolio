@@ -1,8 +1,7 @@
 .AboutMe{
 	border-top: 1px solid #ccc;
-	margin: 20px 0;
-	padding: 40px 0;
-	animation: bgAnimation 1s forwards;
+	padding: 60px 0;
+	/* animation: bgAnimation 1s forwards; */
 	overflow: hidden;
 }
 
@@ -70,5 +69,17 @@ flex-wrap: wrap;
 	border-radius: 50px 50px 0px 50px;
 	border: 3px solid #fff;
 	background-color: #f0f0f0;
-	animation: scaleAnimation .5s forwards;
+	/* animation: scaleAnimation .5s forwards; */
+}
+.AboutMe .colors{
+	display: flex;
+	width: 100%;
+}
+.AboutMe .colors .left{
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.AboutMe .colors .right{
+	width: 100%;
+	margin-left: 20px;
 }

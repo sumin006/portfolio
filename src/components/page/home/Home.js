@@ -6,20 +6,33 @@ import PortfolioList from './PortfolioList';
 
 const onMouseEnter1=()=>{
 	document.querySelector(".bannerOne").className="banner bannerOne gif"
+	document.querySelector(".black").className="black on"
 }
 const onMouseLeave1=()=>{
 	document.querySelector(".bannerOne").className="banner bannerOne"
+	document.querySelector(".black").className="black off"
 }
 const onMouseEnter2=()=>{
 	document.querySelector(".bannerTwo").className="banner bannerTwo gif"
+	document.querySelector(".black").className="black on"
 }
 const onMouseLeave2=()=>{
 	document.querySelector(".bannerTwo").className="banner bannerTwo"
+	document.querySelector(".black").className="black off"
+}
+const onMouseEnter3=()=>{
+	document.querySelector(".bannerThree").className="banner bannerThree gif"
+	document.querySelector(".black").className="black on"
+}
+const onMouseLeave3=()=>{
+	document.querySelector(".bannerThree").className="banner bannerThree"
+	document.querySelector(".black").className="black off"
 }
 
 const Home = () => {
 	return (
 		<div>
+			<div className='black'></div>
 			<div className='main'>
 				<div className='inner'>
 					<Title title={"김수민"}/>
@@ -34,7 +47,8 @@ const Home = () => {
 							<div className='gifbtn' onMouseEnter={onMouseEnter1} onMouseLeave={onMouseLeave1}> 김수민</div>
 							입니다.</div>
 						<div className='hello'>
-							<div className='gifbtn' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>기록하는 습관</div>을 기반으로 <div className='gifbtn'>사용자 중심</div>의 사이트를 개발하고자 합니다.
+							<div className='gifbtn' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>기록하는 습관</div>을 기반으로
+							<div className='gifbtn' onMouseEnter={onMouseEnter3} onMouseLeave={onMouseLeave3}>사용자 중심</div>의 사이트를 개발하고자 합니다.
 						</div>
 					</div>
 				</div>
