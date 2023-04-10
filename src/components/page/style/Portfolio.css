@@ -1,0 +1,92 @@
+.portfolio-site{
+	margin: 20px 0;
+	padding: 40px 0;
+	animation: scaleAnimation 1s forwards;
+	min-height: 90vh;
+}
+.portfolio-site h4{
+	padding: 5px 10px;
+	border-bottom: 1px solid var(--user-color);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	color: var(--user-color);
+	background-color: var(--font-color-toowhitebg);
+}
+.portfolio-site hr{
+	margin-bottom: 30px;
+}
+.portfolio-site p{
+	padding-left: 20px;
+}
+.portfolio-site span,.portfolio-site p{
+	line-height: 30px;
+}
+.portfolio-site .imgDiv{
+	margin: 20px 0;
+}
+.portfolio-site .skillBtn{
+	padding: 15px 20px;
+	margin: var(--default-padding);
+	border-radius: 50px 50px 50px 0px;
+	border: 3px solid #ccc;
+	background-color: var(--user-color);
+	color: var(--font-color);
+	font-weight: bold;
+	animation: scaleAnimation .5s forwards;
+	border: none;
+}
+
+.gitBtns{
+	display: flex;
+	justify-content: flex-end;
+}
+.gitBtn{
+	width: 120px;
+	margin: var(--default-padding);
+	padding: 10px 20px;
+	color: gray;
+	border: 1px solid #ccc;
+	border-radius: calc(var(--default-padding)*2);
+	transition: .5s;
+}
+.gitBtn:hover{
+	background-color: var(--font-color-toowhitebg);
+	border: 1px solid var(--user-color);
+	color: var(--user-color);
+}
+
+.deployment{
+	display: flex;
+	flex-flow: column wrap;
+}
+.expl1, .expl2, .expl3{
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-around;
+	margin-bottom: 140px;
+}
+.deployment .expl1 > div{
+	width: 45%;
+	align-items: center;
+}
+.deployment .expl2 > div:nth-child(1){
+	width: 30%;
+}
+.deployment .expl2 > div:nth-child(2){
+	width: 60%;
+	align-items: center;
+}
+.deployment .expl3 > div{
+	width: 30%;
+	align-items: center;
+}
+.nextBtn, .prevBtn{
+	position: fixed;
+	top: 50%;
+	font-size: 50px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 99;
+}
+.nextBtn{	right: 50px;}
+.prevBtn{ left: 50px;}
