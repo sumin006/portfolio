@@ -10,9 +10,6 @@ const About = () => {
 			<div className='inner'>
 				<Title title={"김수민 | About Me"}/>
 				<div className='content'>
-					<div className='imgDiv'>
-						<img src='./main_img.jpg' alt=''/>
-					</div>
 					<div className='comment-top'>
 						<b>Contact</b>
 							<div className='Acomment'>
@@ -32,7 +29,7 @@ const About = () => {
 							</div>
 							<div className='Acomment'>
 								<p>Git Hub</p>
-								<a href='https://github.com/sumin0gig'>https://github.com/sumin0gig</a>
+								<a href='https://github.com/sumin006'>https://github.com/sumin006</a>
 							</div>
 					</div>
 				</div>
@@ -44,6 +41,7 @@ const About = () => {
 						<div className="introduce">SCSS</div>
 						<br/>
 						<div className="introduce">JavaScript</div>
+						<div className="introduce">JQuery</div>
 						<div className="introduce">Canvas</div>
 						<div className="introduce">TypeScript</div>
 						<div className="introduce">React</div>
@@ -76,7 +74,7 @@ const About = () => {
 								선택한 색상이 메인 컬러로 사용된 페이지를 마주했을 때, 어떤 기분이 드셨나요?
 							</div>
 							<div className='introduce'>
-								대다수의 사용자들은 자신의 기호가 반영됨을 느낄 수 있어 좋았다는 피드백을 보냈습니다.
+								대다수의 사용자들은 자신의 기호가 반영됨을 느낄 수 있어 좋았다는 반응을 보였습니다.
 							</div>
 							<div className='introduce'>
 								앞으로도 이렇듯 좋은 인상을 남길 수 있는 페이지를 만들어나가고 싶습니다.

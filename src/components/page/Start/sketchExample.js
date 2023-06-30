@@ -7,9 +7,9 @@ class SketchExample extends React.Component {
   state = {
     displayColorPicker: false,
     color: {
-      r: '241',
-      g: '112',
-      b: '19',
+      r: '235',
+      g: '197',
+      b: '170',
       a: '1',
     },
   };
@@ -66,7 +66,7 @@ class SketchExample extends React.Component {
         <div style={ styles.swatch } onClick={ this.handleClick }>
           <div style={ styles.color } />
         </div>
-        { this.state.displayColorPicker ? <div style={ styles.popover }>
+        { this.state.displayColorPicker ? <div style={ styles.popover}>
           <div style={ styles.cover } onClick={ this.handleClose }/>
           <SketchPicker color={ this.state.color } onChange={ this.handleChange } />
         </div> : null }

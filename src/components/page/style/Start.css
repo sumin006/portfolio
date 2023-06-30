@@ -9,12 +9,12 @@
 }
 .text-animation{
 	overflow: hidden;
-	height: 40px;
+	height: 50px;
 	animation: bgAnimation 3s forwards linear;
 }
 .color-animation{
 	transform: scale(0);
-	animation: scaleAnimation 1s 3s forwards;
+	animation: scaleAnimation 1s 6s forwards;
 }
 .start .start-quset{
 	padding-bottom: 50px;

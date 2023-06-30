@@ -10,12 +10,12 @@ const Footer = () => {
 				<ul className='footList inner'>
 					<li>
 						<div>
-						<b>사용자 중심의 사이트 개발을 위해 공부하는 프론트 엔드 개발자</b>
+						<b>사용자에게 가장 매력적인 UI/UX를 제공하여 계속 방문하고 싶은 서비스를 구축하기 위해 노력하는 프론트 엔드 개발자</b>
 						</div>
 					</li>
 					<li>
 						<ul className='linkLists'>
-							<Link to="https://github.com/sumin0gig" target="_blank">
+							<Link to="https://github.com/sumin006" target="_blank">
 								<li className='linkList github'>
 									<BsGithub></BsGithub>
 									<p> GITHUB</p>

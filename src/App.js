@@ -39,8 +39,8 @@ function App() {
         <Routes>
           <Route path='/' element={<><Header/><Home/><Footer/></>}/>
           <Route path='/aboutMe' element={<><Header/><About/><Footer/></>}/>
-          <Route path='/portfolio/1' element={<><Header/><Portfolio/><Footer/></>}/>
-          <Route path='/portfolio/2' element={<><Header/><Portfolio2/><Footer/></>}/>
+          <Route path='/portfolio/1' element={<><Header/><Portfolio2/><Footer/></>}/>
+          <Route path='/portfolio/2' element={<><Header/><Portfolio/><Footer/></>}/>
         </Routes>
         
       </div>

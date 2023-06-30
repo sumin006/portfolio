@@ -7,12 +7,12 @@ import { useNavigate } from 'react-router-dom';
 const Portfolio2 = () => {
 	const navigate=useNavigate();
 	const onClick=()=>{
-		navigate("/portfolio/1");
+		navigate("/portfolio/2");
 	}
 	return (
 		<>
-		<div className='prevBtn' onClick={onClick}>
-			{"<"}
+		<div className='nextBtn' onClick={onClick}>
+			{">"}
 		</div>
 		<div className='portfolio-site'>
 			<div className='inner'>
@@ -35,12 +35,12 @@ const Portfolio2 = () => {
 						</div>
 						<div>
 						<ul className='gitBtns'>
-							<a href="https://github.com/sumin0gig/shop-S" target="_blank" rel="noreferrer">
+							<a href="https://github.com/sumin006/shop-S" target="_blank" rel="noreferrer">
 								<li className='gitBtn'>
 								SERVER <BsGithub></BsGithub>
 								</li>
 							</a>
-							<a href="https://github.com/sumin0gig/shop-C" target="_blank" rel="noreferrer">
+							<a href="https://github.com/sumin006/shop-C" target="_blank" rel="noreferrer">
 								<li className='gitBtn'>
 								CLIENT <BsGithub></BsGithub>
 								</li>
@@ -53,11 +53,13 @@ const Portfolio2 = () => {
 							<h4>관리자가 지정할 수 있는 리스트</h4>
 							<p>기본으로 지정된 관리자 아이디는 admin, 비밀번호는 12345678입니다.</p>
 							<p>관리자로 로그인 했을 시, 관리자 페이지에 접근할 수 있습니다.</p>
+							<br/>
 							<p>관리자 페이지에서 관리할 수 있는 것들 중에는 아래 리스트가 포함됩니다.</p>
-							<p>-상품의 상세조건 삭제, 수정, 추가</p>
-							<p>-메인화면 좌측 상단에 나타나는 BEST LIST, 순위</p>
-							<p>-상단 중앙의 배너 슬라이더의 이미지, 링크</p>
-							<p>-배너 슬라이더 아래의 BEST 10 목록</p>
+							<p>- 쇼핑몰에서 판매하는 상품의 상세조건 삭제, 수정, 추가</p>
+							<p>- 메인화면 좌측 상단에 나타나는 BEST LIST의 목록 및 순위</p>
+							<p>- 메인 홈페이지 내 배너 슬라이더의 이미지, 링크</p>
+							<p>- 배너 슬라이더 아래의 BEST 10 목록</p>
+							<p>- 멤버의 관리자 페이지 접속 권한</p>
 
 						</div>
 					</div>

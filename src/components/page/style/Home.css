@@ -128,7 +128,8 @@
 }
 
 .main .portfolio .portfolio-right .windowImg{
-	width: 70%;
+	height: 250px;
+	width: auto;
 	margin: var(--default-padding);
 	overflow: hidden;
 	border-radius: calc(var(--default-padding)*2);

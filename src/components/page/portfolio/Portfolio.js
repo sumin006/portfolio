@@ -6,8 +6,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
 	const navigate=useNavigate();
-	const onClick=()=>{
-		navigate("/portfolio/2");
+	const onClickprev=()=>{
+		navigate("/portfolio/1");
+	}
+	const onClicknext=()=>{
+		navigate("/portfolio/3");
 	}
 	return (
 	<>
@@ -31,30 +34,33 @@ const Portfolio = () => {
 						</div>
 						<div>
 						<ul className='gitBtns'>
-							<a href="https://github.com/sumin0gig/ledger-S" target="_blank" rel="noreferrer">
+							<a href="https://github.com/sumin006/ledger-S" target="_blank" rel="noreferrer">
 								<li className='gitBtn'>
 								SERVER <BsGithub></BsGithub>
 								</li>
 							</a>
-							<a href="https://github.com/sumin0gig/ledger-C" target="_blank" rel="noreferrer">
+							<a href="https://github.com/sumin006/ledger-C" target="_blank" rel="noreferrer">
 								<li className='gitBtn'>
 								CLIENT <BsGithub></BsGithub>
 								</li>
 							</a>
 						</ul>
-							<h4>정확한 복식부기에 기초</h4>
-							<p>복식부기란 현금의 입출만을 기록하는 단식부기와는 달리,</p>
-							<p>현금입출의 원인과 외상거래도 기록하는 기록법입니다.</p>
-							<p>이것을 위해 차변과 대변이라는 두 변을 이용하며</p>
-							<p>거래가 발생하여 계정에 기록할 때 상호 대응되도록 기입해</p>
-							<p>차변 금액의 합계와 대변 금액의 합계가 항상 같도록 유지합니다.</p>
-							<p>덕분에 모든 자산의 현황과 흐름을 정확하게 기입할 수 있습니다.</p>
-							<p>이를 따르면 개인 자산도 기업처럼 입체적으로 관리할 수 있습니다.</p>
+							<h4>복잡한 계산을 대신 해주는 가계부</h4>
+							<p>네이버 가계부 및 후잉 가계부 사이트를 벤치마킹하여</p>
+							<p>사용자가 간단한 수입/지출내역을 입력하면</p>
+							<p>입력한 값을 컴퓨터가 직접 계산 및 분류하여</p>
+							<p>자신의 수입/지출이 어떤 곳에서 발생했는지를</p>
+							<p>확인할 수 있도록 유도하는 사이트입니다.</p>
 							<br/>
 							<h4>간단한 입력과 검색</h4>
 							<p>날짜, 품목, 금액, 차변, 대변만을 입력하여 거래를 입력하고</p>
 							<p>거래 발생 날짜를 기준으로 거래를 검색합니다.</p>
 							<p>간단하고 직관적인 입력 및 검색으로 오류를 최소화 할 수 있습니다.</p>
+							<br/>
+							<h4>모바일 환경 최적화</h4>
+							<p>media Query를 이용하여,</p>
+							<p>모든 페이지에서 PC뿐만 아니라 모바일에서도 편리하게 이용가능한 UI를 제공합니다.</p>
+							<p></p>
 						</div>
 					</div>
 					
@@ -69,6 +75,21 @@ const Portfolio = () => {
 						</div>
 					</div>
 
+					<div className='expl2'>
+						<div>
+							<h4>선택에 따라 달라지는 금액 및 비율</h4>
+							<p>자금 현황 페이지에서는 사용자가 지정한 기간에 해당하는 자금의 상황을 파악할 수 있습니다.</p>
+							<p>특히 수익 및 비용 란에서는 금액이 고정 및 유동으로 나누어져 있습니다. 이는 사용자가 금액 분류(계정과목)를 결정 할 때에 선택한, 유동성 여부에 따라 설정 됩니다.</p>
+							<br/>
+							<p>즉, 사용자가 유동 비용이라고 선택한 계정과목으로 작성한 금액만이 유동비용으로 출력됩니다.</p>
+							<br/>
+							<p>때문에 사용자가 유동 비용으로 작성했던 계정과목을 수정하게 되면 자금 현황 페이지에서도 금액이 변경됩니다.</p>
+						</div>
+						<div>
+							<img src='.././site/ledger/fundstate-2.png' alt='page1'/>
+						</div>
+					</div>
+
 					<h4>회고록</h4>
 					<a href='https://spicy-petalite-fcc.notion.site/household-ledger-35fce911bc5443ddb176fccfc582c3ba' target='_blank'>
 						<p className='skillBtn'>
@@ -78,8 +99,11 @@ const Portfolio = () => {
 				</div>
 			</div>
 		</div>
-		<div className='nextBtn' onClick={onClick}>
+		<div className='nextBtn' onClick={onClicknext}>
 			{">"}
+		</div>
+		<div className='prevBtn' onClick={onClickprev}>
+			{"<"}
 		</div>
 	</>
 	);

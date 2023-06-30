@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SketchExample from './sketchExample';
 import '../style/Start.css'
-import { setCookie } from '../../../App';
+import SentenceMaker from './sentence';
 
 const Start = () => {
-	const[name,setName]=useState("")
-	const onChange=(e)=>{
-		setName(e.target.value)
-	}
+
 	return (
 		<div className='start'>
 			<div className='start-quset'>
-				<h1>안녕하세요 <input name='name' onChange={onChange} maxLength={10}/> 님</h1>
-				<div className={name?'text-animation':''}>
-					<h1>{name?name+'님께서 가장 좋아하는 색상은 무엇인가요?':""}</h1>
-				</div>
+					<h1>
+						{
+							<SentenceMaker sentence={"가장 좋아하시는 색상을 골라주세요."} num={3}/>
+						}
+					</h1>
 			</div>
-			<div className={name?'color-animation':''}>
-				{name?<SketchExample/>:null}			
+			<div className={'color-animation'}>
+				<SketchExample/>			
 			</div>
 		</div>
 	);
+
+	
 };
 
 export default Start;

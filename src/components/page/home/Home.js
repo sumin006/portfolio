@@ -48,7 +48,7 @@ const Home = () => {
 							입니다.</div>
 						<div className='hello'>
 							<div className='gifbtn' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>기록하는 습관</div>을 기반으로
-							<div className='gifbtn' onMouseEnter={onMouseEnter3} onMouseLeave={onMouseLeave3}>사용자 중심</div>의 사이트를 개발하고자 합니다.
+							사용자에게 가장 <div className='gifbtn' onMouseEnter={onMouseEnter3} onMouseLeave={onMouseLeave3}>매력적인</div> 사이트를 개발하고자 합니다.
 						</div>
 					</div>
 				</div>
@@ -56,8 +56,8 @@ const Home = () => {
 			</div>
 
 			<div className='main'>
-				<PortfolioList title={"가계부"}/>
 				<PortfolioList title={"쇼핑몰"}/>
+				<PortfolioList title={"가계부"}/>
 			</div>
 			
 		</div>
