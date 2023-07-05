@@ -9,9 +9,6 @@ const Portfolio = () => {
 	const onClickprev=()=>{
 		navigate("/portfolio/1");
 	}
-	const onClicknext=()=>{
-		navigate("/portfolio/3");
-	}
 	return (
 	<>
 		<div className='portfolio-site'>
@@ -99,9 +96,7 @@ const Portfolio = () => {
 				</div>
 			</div>
 		</div>
-		<div className='nextBtn' onClick={onClicknext}>
-			{">"}
-		</div>
+
 		<div className='prevBtn' onClick={onClickprev}>
 			{"<"}
 		</div>
